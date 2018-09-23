@@ -1,7 +1,7 @@
 # node-app
 
 ## 演示地址
-[node-app]](https://node-app-0923.herokuapp.com/)
+ [node-app](https://node-app-0923.herokuapp.com/)
 
 ## 说明
 通过nodejs实现的一个课程管理系统
