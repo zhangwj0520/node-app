@@ -8,9 +8,10 @@
   },
   "author": "zhangweijie",
   "license": "ISC",
-  "devDependencies": {},
+  "devDependencies": {
+    "body-parser": "^1.18.3"
+  },
   "dependencies": {
-    "body-parser": "^1.18.3",
     "express": "^4.16.3",  
     "connect-flash": "^0.1.1",
     "express-handlebars": "^3.0.0",
