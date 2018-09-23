@@ -11,8 +11,7 @@
   "devDependencies": {
     "body-parser": "^1.18.3",
     "connect-flash": "^0.1.1",
-    "ejs": "^2.6.1",
-    "express": "^4.16.3",
+    "ejs": "^2.6.1",   
     "express-handlebars": "^3.0.0",
     "express-session": "^1.15.6",
     "handlebars": "^4.0.11",
@@ -21,5 +20,7 @@
     "passport": "^0.4.0",
     "passport-local": "^1.0.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "express": "^4.16.3"
+  }
 }
