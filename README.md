@@ -2,6 +2,7 @@
 
 ## 演示地址
  [node-app](https://node-app-0923.herokuapp.com/)
+ 已经注册了两个测试账号：test1@qq.com/test1,test2@qq.com/test2,
 
 ## 说明
 通过nodejs实现的一个课程管理系统
@@ -17,7 +18,7 @@
 10. 注册信息校验在后端实现;
 
 ## 技术栈 
-通过nodejs实现
+通过node、express等
 
 ## Usage
 ```
@@ -26,6 +27,7 @@ cd node-app
 npm install
 npm start
 ```
+
 
 
 

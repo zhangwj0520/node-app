@@ -9,7 +9,7 @@ const router = express.Router()
 //加载model
 require('../models/Users');
 const User = mongoose.model('users')
-const hash = crypto.createHash('sha256');
+
 
 //badyparser middleware
 var urlencodedParser = bodyParser.urlencoded({
@@ -74,9 +74,10 @@ router.post('/register', urlencodedParser, (req, res) => {
             email: req.body.email,
             password: req.body.password
           })
+          const hash = crypto.createHash('sha256');
+          console.log(hash)
           newUser.password  = hash.update(newUser.password).digest("hex");
-          //console.log(newPas);
-          
+          //console.log(newPas);         
           newUser.save().then((user) => {
             req.flash("success_msg", "账号注册成功");
             res.redirect('/users/login')
