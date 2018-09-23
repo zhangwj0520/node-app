@@ -1,9 +1,11 @@
 const LocalStrategy = require('passport-local').Strategy;
 const mongoose = require('mongoose');
-const bcrypt = require('bcrypt');
+//const bcrypt = require('bcrypt');
+const crypto = require('crypto');
 
 //加载model
 const User = mongoose.model('users');
+const hash = crypto.createHash('sha256');
 
 
 module.exports = (passport) => {
@@ -22,16 +24,25 @@ module.exports = (passport) => {
             });
           }
           //密码验证
-          bcrypt.compare(password, user.password, (err, isMatch) => {
-            if (err) throw err;
-            if (isMatch) {
+          let tempPas = hash.update(password).digest("hex");        
+            if (tempPas===user.password) {
               return done(null, user);
             } else {
               return done(null, false, {
                 message: "密码错误"
               });
-            }
-          })
+        
+    }
+          // bcrypt.compare(password, user.password, (err, isMatch) => {
+          //   if (err) throw err;
+          //   if (isMatch) {
+          //     return done(null, user);
+          //   } else {
+          //     return done(null, false, {
+          //       message: "密码错误"
+          //     });
+          //   }
+          // })
         })
     }
 
