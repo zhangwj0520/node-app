@@ -1,29 +1,26 @@
 {
-  "name": "nodeapp",
+  "name": "app",
   "version": "1.0.0",
-  "description": "node课程管理系统",
-  "main": "index.js",
+  "description": "Node中级课程练习",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js"
   },
   "author": "zhangweijie",
   "license": "ISC",
   "devDependencies": {
+    "bcrypt": "^3.0.0",
+    "body-parser": "^1.18.3",
+    "connect-flash": "^0.1.1",
+    "ejs": "^2.6.1",
     "express": "^4.16.3",
     "express-handlebars": "^3.0.0",
-    "bcrypt": "^3.0.0",
-    "connect-flash": "^0.1.1",
     "express-session": "^1.15.6",
-    "install": "^0.12.1",
+    "handlebars": "^4.0.11",
     "method-override": "^3.0.0",
-    "mongoose": "^5.2.17",
-    "node-pre-gyp": "^0.11.0",
+    "mongoose": "^5.2.8",
     "passport": "^0.4.0",
-    "passport-local": "^1.0.0",
-    "body-parser": "^1.18.3",
-    "handlebars": "^4.0.11"
-
+    "passport-local": "^1.0.0"
   },
   "dependencies": {}
 }
