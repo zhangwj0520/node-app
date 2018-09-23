@@ -8,11 +8,10 @@
   },
   "author": "zhangweijie",
   "license": "ISC",
-  "devDependencies": {
-    "body-parser": "^1.18.3"
-  },
+  "devDependencies": {},
   "dependencies": {
-    "express": "^4.16.3",  
+    "express": "^4.16.3",
+    "body-parser": "^1.18.3",
     "connect-flash": "^0.1.1",
     "express-handlebars": "^3.0.0",
     "express-session": "^1.15.6",
