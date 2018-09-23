@@ -12,7 +12,6 @@ const User = mongoose.model('users')
 const hash = crypto.createHash('sha256');
 
 //badyparser middleware
-var jsonParser = bodyParser.json();
 var urlencodedParser = bodyParser.urlencoded({
   extended: false
 });

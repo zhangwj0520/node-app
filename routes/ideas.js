@@ -9,7 +9,6 @@ require('../models/Idea');
 const Idea = mongoose.model('ideas');
 
 //badyparser middleware
-var jsonParser = bodyParser.json();
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
 // override with POST having ?_method=DELETE
 
