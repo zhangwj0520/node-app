@@ -1,0 +1,23 @@
+{{#each errors}}
+  <div class="alert alert-danger">{{text}}</div>
+
+{{else}}
+
+
+{{/each}}
+
+<div class="card card-body">
+  <h3>想学的课程</h3>
+  <form action="/ideas/{{idea.id}}?_method=PUT" method="post">
+    <input type="hidden" name="_method" value="PUT">
+    <div class="form-group">
+      <label for="title">标题</label>
+      <input type="text" class="form-control" name="title" value="{{idea.title}}">
+    </div>
+    <div class="form-group">
+      <label for="details">详情</label>
+      <textarea class="form-control" name="details">{{idea.details}}</textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">编辑</button>
+  </form>
+</div>
