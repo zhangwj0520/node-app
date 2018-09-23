@@ -6,19 +6,19 @@
       <form action="/users/register" method="POST">
         <div class="form-group">
           <label for="name">用户名</label>
-          <input type="text" value="{{name}}" class="form-control" name="name" required>
+          <input type="text" value="{{name}}" class="form-control" name="name" >
         </div>
         <div class="form-group">
           <label for="email">邮箱</label>
-          <input type="email" value="{{email}}" name="email" class="form-control" required>
+          <input type="email" value="{{email}}" name="email" class="form-control">
         </div>
         <div class="form-group">
           <label for="password">密码</label>
-          <input type="password" name="password" class="form-control" required>
+          <input type="password" name="password" class="form-control">
         </div>
         <div class="form-group">
           <label for="password2">确认密码</label>
-          <input type="password" name="password2" class="form-control" required>
+          <input type="password" name="password2" class="form-control">
         </div>
         <button type="submit" class="btn btn-primary">注册</button>
       </form>
