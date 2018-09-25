@@ -20,7 +20,7 @@
 ## 技术栈 
 通过node、express等
 
-## Usage
+## 使用
 ```
 git https://github.com/zhangwj0520/node-app
 cd node-app
