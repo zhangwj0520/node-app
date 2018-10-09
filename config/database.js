@@ -4,6 +4,6 @@ if (process.env.NODE_ENV == "production") {
     }
 } else {
     module.exports = {
-        mongoURL: "mongodb://localhost:27017/node-app"
+        mongoURL: "mongodb://localhost:27017/vue-node-ele"
     }
 }
